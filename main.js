@@ -11,32 +11,6 @@ var zZero = 0;      // machine Z zero should be set to the surface being drilled
 var tmpVar = 0;
 var fullRetractFlag = 0;  // keep track of when to do full retract
 
-function toggleDisablePecking(_checked) {
-
-  if (_checked) {
-      document.getElementById("peckDepth").disabled = true;
-      document.getElementById("chipBrkRetract").disabled = true;
-      document.getElementById("fullRetractDepth").disabled = true;
-      document.getElementById("feedChipRetract").disabled = true;
-  } else {
-      document.getElementById("peckDepth").disabled = false;
-      document.getElementById("chipBrkRetract").disabled = false;
-      document.getElementById("fullRetractDepth").disabled = false;
-      document.getElementById("feedChipRetract").disabled = false;
-  }
-}
-
-function toggleXYParkPosition(_checked) {
-
-  if (_checked) {
-      document.getElementById("xPark").disabled = true;
-      document.getElementById("yPark").disabled = true;
-  } else {
-      document.getElementById("xPark").disabled = false;
-      document.getElementById("yPark").disabled = false;
-  }
-}
-
 // Generate and fill the new window
 
 function makeNewWindow( ) {
